@@ -1,0 +1,10 @@
+{
+  "generators": {
+    "my-migration": {
+      "version": "1.2.0",
+      "description": "my-migration",
+      "cli": "nx",
+      "implementation": "./src/migrations/my-migration/my-migration"
+    }
+  }
+}
