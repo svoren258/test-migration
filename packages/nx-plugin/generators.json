@@ -1,0 +1,19 @@
+{
+  "generators": {
+    "check-eslint-version": {
+      "factory": "./src/generators/check-eslint-version/generator",
+      "schema": "./src/generators/check-eslint-version/schema.json",
+      "description": "check-eslint-version generator"
+    },
+    "create-html-report": {
+      "factory": "./src/generators/create-html-report/generator",
+      "schema": "./src/generators/create-html-report/schema.json",
+      "description": "createHtmlReport generator"
+    },
+    "serve-html-report": {
+      "factory": "./src/generators/serve-html-report/generator",
+      "schema": "./src/generators/serve-html-report/schema.json",
+      "description": "serve-html-report generator"
+    }
+  }
+}

@@ -15,7 +15,11 @@
       "rules": {}
     },
     {
-      "files": ["./package.json", "./migrations.json"],
+      "files": [
+        "./package.json",
+        "./migrations.json",
+        "./generators.json",
+      ],
       "parser": "jsonc-eslint-parser",
       "rules": {
         "@nx/nx-plugin-checks": "error"

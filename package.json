@@ -5,10 +5,11 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@inquirer/prompts": "^2.3.0",
     "@nx/devkit": "16.4.1",
     "@nx/plugin": "^16.4.1",
     "@swc/helpers": "~0.5.0",
-    "@test-migration/nx-plugin": "1.2.0",
+    "@test-migration/nx-plugin": "3.6.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {

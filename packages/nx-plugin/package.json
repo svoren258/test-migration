@@ -1,8 +1,9 @@
 {
   "name": "@test-migration/nx-plugin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "commonjs",
   "nx-migrations": {
     "migrations": "./migrations.json"
-  }
+  },
+  "generators": "./generators.json",
 }
