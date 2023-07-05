@@ -15,7 +15,11 @@ export async function checkEslintVersion(tree: Tree): Promise<void> {
   const packageJson = JSON.parse(readFileSync('./package.json', 'utf-8'));
   const expectedEslintVersion = '8.39.0';
   const isEslintAligned = packageJson['devDependencies']['eslint'] === expectedEslintVersion;
-  console.log(`Eslint version is ${!isEslintAligned ? 'not' : ''} matching the local version.\n`);
+  if (isEslintAligned) {
+    console.log(`\x1b[32m \u2611 Eslint version is matching the local version.\n \x1b[0m`);
+  } else {
+    console.log(`\x1b[31m \u2717 Eslint version is not matching the local version.\n \x1b[0m`);
+  }
   const reportJson: ReportEntry = {
     title: 'Migration Report',
     targets: [

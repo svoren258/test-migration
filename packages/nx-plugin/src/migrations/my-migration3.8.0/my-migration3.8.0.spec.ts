@@ -1,9 +1,9 @@
 import { createTreeWithEmptyWorkspace } from '@nx/devkit/testing';
 import { Tree } from '@nx/devkit';
 
-import update from './my-migration3.6.0';
+import update from './my-migration3.8.0';
 
-describe('my-migration3.6.0 migration', () => {
+describe('my-migration3.8.0 migration', () => {
   let tree: Tree;
 
   beforeEach(() => {

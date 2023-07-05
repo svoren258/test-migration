@@ -1,12 +1,12 @@
 {
   "migrations": [
     {
-      "version": "3.6.0",
-      "description": "my-migration3.6.0",
+      "version": "3.8.0",
+      "description": "my-migration3.8.0",
       "cli": "nx",
-      "implementation": "./src/migrations/my-migration3.6.0/my-migration3.6.0",
+      "implementation": "./src/migrations/my-migration3.8.0/my-migration3.8.0",
       "package": "@test-migration/nx-plugin",
-      "name": "my-migration3.6.0"
+      "name": "my-migration3.8.0"
     }
   ]
 }

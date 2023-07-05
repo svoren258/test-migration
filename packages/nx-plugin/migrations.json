@@ -1,15 +1,15 @@
 {
   "generators": {
-    "my-migration3.6.0": {
-      "version": "3.6.0",
-      "description": "my-migration3.6.0",
+    "my-migration3.8.0": {
+      "version": "3.8.0",
+      "description": "my-migration3.8.0",
       "cli": "nx",
-      "implementation": "./src/migrations/my-migration3.6.0/my-migration3.6.0"
+      "implementation": "./src/migrations/my-migration3.8.0/my-migration3.8.0"
     }
   },
   "packageJsonUpdates": {
-    "3.0.0": {
-      "version": "1.0.0",
+    "3.7.0": {
+      "version": "3.6.0",
       "packages": {
         "eslint": {
           "version": "8.39.0",
