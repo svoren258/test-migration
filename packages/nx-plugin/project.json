@@ -30,11 +30,6 @@
           },
           {
             "input": "./packages/nx-plugin",
-            "glob": "executors.json",
-            "output": "."
-          },
-          {
-            "input": "./packages/nx-plugin",
             "glob": "migrations.json",
             "output": "."
           }
@@ -54,7 +49,6 @@
           "packages/nx-plugin/package.json",
           "packages/nx-plugin/migrations.json",
           "packages/nx-plugin/generators.json",
-          "packages/nx-plugin/executors.json"
         ]
       }
     },

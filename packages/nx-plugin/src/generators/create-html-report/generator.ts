@@ -1,6 +1,7 @@
 import {Tree} from '@nx/devkit';
 import {readFileSync, writeFileSync} from 'fs';
 import {ReportEntry} from "../check-eslint-version/generator";
+import {exec} from "child_process";
 
 // TODO: make JSON report extendable
 export async function createHtmlReportGenerator(

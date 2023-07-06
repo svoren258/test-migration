@@ -1,15 +1,15 @@
-import { readFileSync, writeFileSync } from 'fs';
-import { Tree } from "@nx/devkit";
+import {readFileSync, writeFileSync} from 'fs';
+import {Tree} from "@nx/devkit";
 
 export type ReportEntry = {
   title: string;
-  targets: [
+  targets:
     {
       name: string;
       checked: boolean;
-    }
-  ]
+    }[]
 };
+
 export async function checkEslintVersion(tree: Tree): Promise<void> {
   console.log('Check Eslint Version Generator is running...\n');
   const packageJson = JSON.parse(readFileSync('./package.json', 'utf-8'));
@@ -26,11 +26,19 @@ export async function checkEslintVersion(tree: Tree): Promise<void> {
       {
         name: 'Check eslint version',
         checked: isEslintAligned,
+      },
+      {
+        name: 'Check TSC config',
+        checked: false,
+      },
+      {
+        name: 'Check Prettier config',
+        checked: false,
       }
     ]
-  }
+  };
   try {
-    writeFileSync('./migration-report.json', JSON.stringify(reportJson), { flag: 'a+' });
+    writeFileSync('./migration-report.json', JSON.stringify(reportJson), {flag: 'a+'});
   } catch (e) {
     console.error(e);
   }

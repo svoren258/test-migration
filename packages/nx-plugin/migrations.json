@@ -1,10 +1,16 @@
 {
   "generators": {
-    "my-migration3.8.0": {
-      "version": "3.8.0",
-      "description": "my-migration3.8.0",
+    "my-migration4.0.0": {
+      "version": "4.0.0",
+      "description": "my-migration4.0.0",
       "cli": "nx",
-      "implementation": "./src/migrations/my-migration3.8.0/my-migration3.8.0"
+      "implementation": "./src/migrations/my-migration4.0.0/my-migration4.0.0"
+    },
+    "my-migration4.1.0": {
+      "version": "4.1.0",
+      "description": "my-migration4.1.0",
+      "cli": "nx",
+      "implementation": "./src/migrations/my-migration4.1.0/my-migration4.1.0"
     }
   },
   "packageJsonUpdates": {
